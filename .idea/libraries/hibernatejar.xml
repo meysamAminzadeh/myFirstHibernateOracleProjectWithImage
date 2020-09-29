@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="hibernatejar">
+    <CLASSES>
+      <root url="file://D:/JavaeeAPP/hibernatejar" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://D:/JavaeeAPP/hibernatejar" />
+    </SOURCES>
+    <jarDirectory url="file://D:/JavaeeAPP/hibernatejar" recursive="false" />
+    <jarDirectory url="file://D:/JavaeeAPP/hibernatejar" recursive="false" type="SOURCES" />
+  </library>
+</component>

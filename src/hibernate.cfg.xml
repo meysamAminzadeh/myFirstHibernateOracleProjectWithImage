@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- dar 4 khatte dastoore zir moshakhasate ertebat ba DB ra midahim -->
+        <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property> <!-- driver DB marbooteh -->
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@192.168.142.128:1521:orcl</property>  <!-- uri DB marbooteh -->
+        <property name="hibernate.connection.username">system</property>
+        <property name="hibernate.connection.password">12345</property>
+
+
+        <property name="show_sql">true</property> <!-- agar true bashad dastoorate ejra shodeh be soorate
+                                                        sql dar console namaiesh dadeh mishavand  -->
+
+        <!-- <property name="hbm2ddl.auto">create-drop</property>--> <!-- khodesh mire tableha ro az
+                                                                        roye objecthaye dakhel barname misazad  -->
+
+        <property name="dialect">org.hibernate.dialect.OracleDialect</property> <!-- Lahjeie DB  -->
+
+        <property name="hibernate.connection.autocommit">true</property>
+
+        <mapping resource="model/BL/ORM/Person.hbm.xml"/> <!-- masire file haie hbm -->
+        <mapping resource="model/BL/ORM/address.hbm.xml"/> <!-- masire file haie hbm -->
+        <mapping resource="model/BL/ORM/Person2.hbm.xml"/>
+
+   </session-factory>
+</hibernate-configuration>

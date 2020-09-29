@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="model.BL.ORM">
+
+    <class name="PersonTO" table="PERSON"> <!-- classe personTo ra vasl
+                                                kon be table person samte DB -->
+
+        <id name="id" type="long" column="ID">
+            <generator class="increment"/>
+        </id>
+
+        <property name="name" type="java.lang.String" column="NAME"/>
+
+        <property name="family" type="java.lang.String" column="FAMILLY"/>
+        <property name="image" type="java.sql.Blob" column="IMAGE"/>
+
+
+    </class>
+</hibernate-mapping>
